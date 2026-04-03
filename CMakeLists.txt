@@ -2,6 +2,11 @@ cmake_minimum_required (VERSION 3.28)
 
 project (superbible7)
 
+# Set the C++ standard to C++20
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
 LINK_DIRECTORIES( ${CMAKE_SOURCE_DIR}/lib )
 
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
@@ -128,6 +133,7 @@ set(EXAMPLES
   toonshading
   tunnel
   wrapmodes
+  mytest
 )
 
 find_package(OpenMP)
